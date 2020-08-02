@@ -51,28 +51,20 @@ export default function Post() {
 						<section className='share'>
 							<h4>Share the article</h4>
 							<div className='share-links'>
-								<a
-									className='share-facebook'
-									href={`https://www.facebook.com/sharer/sharer.php?u=https://dazzling-leavitt-a1d366.netlify.app/post/how-i-learned-handstand1`}
-									target='_blank'
-								>
+								<a className='share-facebook' href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} target='_blank'>
 									<i className='fab fa-facebook-f'></i>
 								</a>
 								<a
 									href='https://twitter.com/share?ref_src=twsrc%5Etfw'
 									// className='twitter-share-button'
 									// data-size='large'
-									data-url='https://dazzling-leavitt-a1d366.netlify.app/post/how-i-learned-handstand1'
+									data-url={window.location.href}
 									data-show-count='false'
 								>
 									<i className='fab fa-twitter'></i>
 								</a>
 
-								<a
-									className='share-vk'
-									href={`https://vk.com/share.php?url=https://dazzling-leavitt-a1d366.netlify.app/post/how-i-learned-handstand1`}
-									target='_blank'
-								>
+								<a className='share-vk' href={`https://vk.com/share.php?url=${window.location.href}`} target='_blank'>
 									<i className='fab fa-vk'></i>
 								</a>
 							</div>
