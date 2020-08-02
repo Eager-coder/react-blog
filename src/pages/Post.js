@@ -40,13 +40,13 @@ export default function Post() {
                     <div className="date-and-author">
                         <span>By {postData.data.author} | {moment(postData.data.first_publication_date).format('LL')}</span>
                     </div>
-                    <a href={`https://www.facebook.com/sharer/sharer.php?u=https://anifind.netlify.app/anime/41353`} target="_blank">
+                    <a href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} target="_blank">
                     Share on Facebook</a>
 
-                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-url="https://the-steppe.com/steppe-english/what-s-so-evil-about-nuts" data-show-count="false">Tweet</a>
+                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-url={window.location.href} data-show-count="false">Tweet</a>
                    
                     {/* Vk */}
-                    <a href={`https://vk.com/share.php?url=https://the-steppe.com/steppe-english/what-s-so-evil-about-nuts`} target="_blank">Поделиться ВКонтакте</a>
+                    <a href={`https://vk.com/share.php?url=${window.location.href}`} target="_blank">Поделиться ВКонтакте</a>
                     <img src={postData.data.image.url} alt=""/>
                 </div>
                 <RichTextSlice content={postData ? postData.data.body[0].primary.text : ''} />
