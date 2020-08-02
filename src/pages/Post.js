@@ -71,8 +71,8 @@ export default function Post() {
 									<i className='fab fa-vk'></i>
 								</a>
 								<FacebookShareButton url={document.location.href}>Hefew</FacebookShareButton>
-								<VKShareButton url={'https://edupro.netlify.app/post/how-i-learned-handstand1'}>Sharevk</VKShareButton>
-								<TwitterShareButton url='https://edupro.netlify.app/post/how-i-learned-handstand1'>Tweet</TwitterShareButton>
+								<VKShareButton url={document.location.href}>Sharevk</VKShareButton>
+								<TwitterShareButton url={document.location.href}>Tweet</TwitterShareButton>
 							</div>
 						</section>
 						<section className='comments'>
