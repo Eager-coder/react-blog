@@ -5,7 +5,7 @@ import { useParams, Link } from 'react-router-dom';
 import moment from 'moment';
 import { Helmet } from 'react-helmet';
 import { FacebookProvider, Comments, ShareButton } from 'react-facebook';
-import { FacebookShareButton } from 'react-share';
+import { FacebookShareButton, VKShareButton, TwitterShareButton } from 'react-share';
 import Footer from '../components/Footer';
 import '../css/Post.css';
 export default function Post() {
@@ -70,14 +70,16 @@ export default function Post() {
 								<a className='share-vk' href={`https://vk.com/share.php?url=${window.location.href}`} target='_blank'>
 									<i className='fab fa-vk'></i>
 								</a>
-								<FacebookShareButton url={document.location.href} />
+								<FacebookShareButton url={document.location.href}>Hefew</FacebookShareButton>
+								<VKShareButton url={'https://edupro.netlify.app/post/how-i-learned-handstand1'}>Sharevk</VKShareButton>
+								<TwitterShareButton url='https://edupro.netlify.app/post/how-i-learned-handstand1'>Tweet</TwitterShareButton>
 							</div>
 						</section>
 						<section className='comments'>
 							<h4 className='comment-title'>Leave a comment</h4>
 							<div className='comments-container'>
 								<FacebookProvider appId='749408989149871'>
-									<Comments width='100%' href={window.location.href} />
+									<Comments width='100%' href={'https://edupro.netlify.app/post/how-i-learned-handstand1'} />
 								</FacebookProvider>
 							</div>
 						</section>
