@@ -1,0 +1,214 @@
+.front-left {
+  grid-area: big;
+  position: relative;
+}
+
+.front-left img {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.front-left p {
+  font-size: 1.1rem;
+}
+
+.front-left .textbox {
+  padding: 20px;
+  z-index: 1;
+  position: absolute;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8);
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+}
+
+.front-left .textbox .title {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  color: black;
+}
+
+.front-left .textbox .title:hover {
+  -webkit-text-decoration: underline 4px #ffca1e;
+          text-decoration: underline 4px #ffca1e;
+}
+
+.front-left .textbox .category {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1px 5px;
+  border: 2px solid black;
+  color: #fcba04;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.front-left .textbox .meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.front-left .textbox .meta .date {
+  margin: 0 20px;
+}
+
+.front-small {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.front-small > a {
+  height: 100%;
+  width: 50%;
+}
+
+.front-small > a img {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.front-small .textbox {
+  padding: 20px;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+}
+
+.front-small .textbox .category {
+  display: inline-block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 1px 5px;
+  border: 2px solid black;
+  color: #fcba04;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.front-small .textbox .title {
+  font-size: 1.5rem;
+  color: black;
+  -webkit-text-decoration: #ffca1e;
+          text-decoration: #ffca1e;
+}
+
+.front-small .textbox .title:hover {
+  -webkit-text-decoration: underline 4px #ffca1e;
+          text-decoration: underline 4px #ffca1e;
+}
+
+.front-small .textbox .meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.front-small .textbox .meta .date {
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .front-left .textbox {
+    width: auto;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    right: 15%;
+    left: 15%;
+  }
+  .front-left .textbox h2 {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  .front-small {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .front-small > a {
+    width: 100%;
+  }
+  .front-small .textbox {
+    width: 100%;
+  }
+  .front-small .textbox .title {
+    margin: 15px 0;
+    font-size: 1.5rem;
+  }
+  .front-small .textbox .meta {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .front-left .textbox {
+    left: 20px;
+    right: 20px;
+  }
+  .front-left .textbox .title {
+    font-size: 1.5rem;
+  }
+  .front-left .textbox .category {
+    font-size: 0.8rem;
+  }
+  .front-small {
+    width: 100%;
+    height: 100%;
+  }
+  .front-small .textbox {
+    padding: 10px;
+  }
+  .front-small .textbox .title {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  .front-small .textbox .category {
+    font-size: 0.8rem;
+  }
+}

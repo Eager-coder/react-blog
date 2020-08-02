@@ -1,0 +1,168 @@
+section.post {
+  margin: 0 auto;
+}
+
+section.post .post-container {
+  width: 100%;
+}
+
+section.post .post-container .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+  text-align: center;
+}
+
+section.post .post-container .hero .category {
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700;
+}
+
+section.post .post-container .hero h1 {
+  max-width: 1100px;
+  margin: auto;
+  font-size: 3.5rem;
+  font-weight: 700;
+  padding: 0 50px;
+  margin-bottom: 20px;
+}
+
+section.post .post-container .hero p {
+  font-size: 1.2rem;
+  max-width: 1100px;
+  padding: 0 50px;
+  line-height: 1.2;
+}
+
+section.post .post-container .hero hr {
+  width: 100px;
+  border: none;
+  height: 2px;
+  background-color: black;
+  margin: 40px 0;
+}
+
+section.post .post-container .hero .date-and-author {
+  margin-bottom: 30px;
+}
+
+section.post .post-container .hero img {
+  width: 100%;
+}
+
+section.post .post-container .richtext-container {
+  max-width: 800px;
+  padding: 0 50px;
+  width: 100%;
+  margin: auto;
+}
+
+section.post .post-container .richtext-container * {
+  font-family: Chronicle, Georgia, Times, Times New Roman, serif;
+}
+
+section.post .post-container .richtext-container p {
+  font-size: 1.3rem;
+  margin: 30px 0;
+  line-height: 1.5;
+}
+
+section.post .post-container .richtext-container img {
+  width: 100%;
+}
+
+section.post .post-container .richtext-container ul, section.post .post-container .richtext-container ol {
+  margin: 20px 0 20px 50px;
+}
+
+section.post .post-container .richtext-container ul li, section.post .post-container .richtext-container ol li {
+  font-size: 1.3rem;
+  margin: 5px 0;
+}
+
+section.post .post-container .richtext-container .embed-youtube iframe {
+  width: 100%;
+  min-height: 400px;
+}
+
+@media screen and (max-width: 1100px) {
+  section.post .post-container .hero h1 {
+    font-size: 2.8rem;
+  }
+  section.post .post-container .hero p {
+    font-size: 1.1rem;
+    max-width: 1000px;
+  }
+  section.post .post-container .richtext-container p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+  }
+  section.post .post-container .richtext-container ol li, section.post .post-container .richtext-container ul li {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.post .post-container .hero h1 {
+    font-size: 2.5rem;
+  }
+  section.post .post-container .hero p {
+    font-size: 1.1rem;
+    max-width: 900px;
+  }
+  section.post .post-container .richtext-container {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  section.post .post-container .hero {
+    padding: 20px 0;
+  }
+  section.post .post-container .hero .category {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  section.post .post-container .hero h1 {
+    font-size: 1.3rem;
+    padding: 0 15px;
+    margin: 10px 0;
+  }
+  section.post .post-container .hero p {
+    padding: 0 15px;
+    font-size: 0.8rem;
+  }
+  section.post .post-container .hero hr {
+    margin: 20px 0;
+    height: 1px;
+  }
+  section.post .post-container .hero .date-and-author span {
+    font-size: 0.8rem;
+  }
+  section.post .post-container .richtext-container p {
+    font-size: 1rem;
+  }
+  section.post .post-container .richtext-container ol, section.post .post-container .richtext-container ul {
+    margin-left: 20px;
+  }
+  section.post .post-container .richtext-container ol li, section.post .post-container .richtext-container ul li {
+    font-size: 1rem;
+  }
+  section.post .post-container .richtext-container .embed-youtube iframe {
+    min-height: 150px;
+  }
+}
