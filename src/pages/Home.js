@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet';
 import '../css/Home.css';
 import Client from '../utils/PrismicClient';
 import Prismic from 'prismic-javascript';
@@ -63,6 +63,9 @@ function Home() {
 	}, []);
 	return latests ? (
 		<>
+			<Helmet>
+				<title>Home | EduPro</title>
+			</Helmet>
 			<main>
 				<div className='home-container'>
 					<section className='front-grid'>

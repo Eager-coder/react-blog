@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
-
+import Helmet from 'react-helmet';
 import Home from './pages/Home';
 import Post from './pages/Post';
 import Category from './pages/Category';
@@ -10,6 +10,13 @@ function App() {
 	return (
 		<div className='App'>
 			<Router>
+				<Helmet>
+					<link
+						rel='icon'
+						href='/assets/icon.png'
+						// sizes='32x32'
+					/>
+				</Helmet>
 				<Header />
 				<Switch>
 					<Route exact path='/'>

@@ -4,7 +4,7 @@ import SliceZone from '../components/SliceZone';
 import { useParams, Link } from 'react-router-dom';
 import moment from 'moment';
 import { Helmet } from 'react-helmet';
-import { FacebookProvider, Comments } from 'react-facebook';
+import { FacebookProvider, Comments, ShareButton } from 'react-facebook';
 import Footer from '../components/Footer';
 import '../css/Post.css';
 export default function Post() {
@@ -23,6 +23,8 @@ export default function Post() {
 			<main>
 				<article className='post'>
 					<Helmet>
+						<title>{postData.data.title[0].text} | EduPro</title>
+
 						<meta property='og:url' content={window.location.href} />
 						<meta property='og:type' content='article' />
 						<meta property='og:title' content={postData.data.title[0].text} />
@@ -67,6 +69,9 @@ export default function Post() {
 								<a className='share-vk' href={`https://vk.com/share.php?url=${window.location.href}`} target='_blank'>
 									<i className='fab fa-vk'></i>
 								</a>
+								<FacebookProvider appId='749408989149871'>
+									<ShareButton href={window.location.href}>Share</ShareButton>
+								</FacebookProvider>
 							</div>
 						</section>
 						<section className='comments'>
